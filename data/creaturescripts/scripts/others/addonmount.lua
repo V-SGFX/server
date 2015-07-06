@@ -6,44 +6,32 @@
     local player = Player(cid)
     local addons ={
               --[storage] = {outfit_male, outfit_female},
-            [28416] = {143, 147}, -- barbarian
-            [28417] = {134, 142}, -- warrior
-            [28418] = {152, 156}, -- assassins
-            [28419] = {465, 466}, -- Insectoid
-            [28420] = {133, 141},  -- summoner
-            [28421] = {472, 471}, -- Entrepreneur
-            [28422] = {144, 148}, -- duid
-            [28423] = {278, 279}, -- brotherhood
-            [28424] = {577, 578}, -- Dream Warden
-            [28425] = {610, 618}, -- Glooth Engineer
-            [28426] = {130, 138}, -- mage
-            [28427] = {634, 635}, -- Conjurer
-            [28428] = {128, 136}, -- Citizen
-            [28429] = {129, 137}, -- Hunter
-            [28430] = {131, 139}, -- Kinghit
-            [28431] = {132, 140}, -- Noblewoman
-            [28432] = {145, 149}, -- Wizard
-            [28433] = {146, 150}, -- Oriental
-            [28434] = {151, 155}, -- Pirate
-            [28435] = {153, 157}, -- Beggar
-            [28436] = {154, 158}, -- Shaman
-            [28437] = {251, 252}, -- Norsewoman
-            [28438] = {268, 269}, -- Nightmare
-            [28439] = {273, 270}, -- jester
-            [28441] = {289, 288}, -- demonhunter
-            [28442] = {325, 324}, -- yalaharian
-            [28444] = {335, 336}, -- warnaster
-            [28445] = {327, 366}, -- wayfarer
-            [28446] = {430, 431}, -- afflicted
-            [28447] = {432, 433}, -- elementalist
-            [28448] = {463, 464}, -- deepling
-            [28449] = {512, 513}, -- crystal warlord
-            [28450] = {516, 514}, -- soil guardian
-            [28451] = {541, 542}, -- demon
-            [28452] = {574, 575}, -- cave explorer
-            [28453] = {619, 620}, -- jersey
-            [28454] = {637, 636}, -- beastmaster
-            [28455] = {632, 633} -- champion
+	        [28416] = {143, 147}, -- barbarian		  
+		[28417] = {156, 152}, -- Assassin
+	        [28418] = {269, 268}, -- Nightmare
+	        [28419] = {279, 278}, -- Brotherhood
+	        [28420] = {433, 432}, -- Elementalist
+	        [28421] = {464, 463}, -- Deepling
+	        [28422] = {466, 465}, -- Insectoid
+	        [28423] = {471, 472}, -- Entrepreneur
+	        [28424] = {513, 512}, -- Crystal Warlord
+	        [28425] = {514, 516}, -- Soil Guardian
+	        [28426] = {542, 541}, -- Demon
+	        [28427] = {575, 574}, -- Cave Explorer
+	        [28428] = {578, 577}, -- Dream Warden
+	        [28429] = {618, 610}, -- Glooth Engineer
+	        [28430] = {620, 619}, -- Jersey
+	        [28431] = {632, 633}, -- Champion
+	        [28432] = {635, 634}, -- Conjurer
+	        [28433] = {636, 637}, -- Beastmaster
+	        [28434] = {664, 665}, -- Chaos Acolyte
+	        [28435] = {666, 667}, -- Death Herald
+	        [28436] = {683, 684}, -- Ranger
+	        [28437] = {694, 695}, -- Ceremonial Garb
+	        [28438] = {696, 697}, -- Puppeteer
+	        [28439] = {698, 699}, -- Spirit Caller
+	        [28440] = {724, 725}, -- Evoker
+	        [28441] = {732, 733}, -- Seaweaver
            
             }
            
@@ -52,7 +40,7 @@
                                     player:getPosition():sendMagicEffect(CONST_ME_GIFT_WRAPS)
                                     player:addOutfitAddon(addon[1], 3)
                                     player:addOutfitAddon(addon[2], 3)
-                                    player:sendTextMessage(MESSAGE_INFO_DESCR, "Seu Addon full foi adicionado!")
+                                    player:sendTextMessage(MESSAGE_INFO_DESCR, "Addon Given!")
                                     player:setStorageValue(storage, 0)
                             end
                     end
